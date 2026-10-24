@@ -17,7 +17,7 @@ Trained on the **Flickr8k** dataset.
 - [Installation & Usage](#-installation--usage)
 - [Results & Observations](#-results--observations)
 - [Future Work](#-future-work)
-- [Tech Stack](#-tech-stack)
+  
 
 
 ---
