@@ -1,4 +1,4 @@
-# 🖼️ Image Caption Generator using CNN + LSTM
+#  Image Caption Generator using CNN + LSTM
 
 An end-to-end deep learning project that looks at an image and writes a natural-language sentence describing it. A pretrained **DenseNet201** CNN encodes the image, an **LSTM** decoder generates the caption word by word, and a **Streamlit** web app lets anyone upload an image and get a caption.
 
@@ -6,7 +6,7 @@ Trained on the **Flickr8k** dataset.
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 - [Overview](#-overview)
 - [Demo](#-demo)
 - [Architecture](#-architecture)
@@ -18,11 +18,11 @@ Trained on the **Flickr8k** dataset.
 - [Results & Observations](#-results--observations)
 - [Future Work](#-future-work)
 - [Tech Stack](#-tech-stack)
-- [Acknowledgements](#-acknowledgements)
+
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 Image captioning sits at the intersection of **Computer Vision** and **Natural Language Processing**. This project follows the classic **encoder–decoder** framework:
 
@@ -35,7 +35,7 @@ Image captioning sits at the intersection of **Computer Vision** and **Natural L
 
 ---
 
-## 🎬 Demo
+##  Demo
 
 Run the Streamlit app, upload a `.jpg`, `.jpeg` or `.png` image, and the model shows the image with its generated caption as the title.
 
@@ -44,7 +44,7 @@ Run the Streamlit app, upload a `.jpg`, `.jpeg` or `.png` image, and the model s
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 ```mermaid
 flowchart LR
@@ -73,7 +73,7 @@ flowchart LR
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 **[Flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k)**
 - 8,091 images
@@ -88,7 +88,7 @@ flowchart LR
 
 ---
 
-## ⚙️ Pipeline
+##  Pipeline
 
 ### 1. Caption preprocessing
 - Convert to lowercase
@@ -134,7 +134,7 @@ repeat up to max_length:
 
 ---
 
-## 🏋️ Training Details
+##  Training Details
 
 | Hyperparameter | Value |
 |----------------|-------|
@@ -156,7 +156,7 @@ Training was done on Kaggle with GPU (~75 s per epoch; feature extraction for al
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Image-Caption-Generator-Using-Deep-Learning-Image-Captioning-Using-CNN-LSTM/
@@ -172,11 +172,11 @@ Image-Caption-Generator-Using-Deep-Learning-Image-Captioning-Using-CNN-LSTM/
     └── tokenizer.pkl             # Fitted Keras tokenizer
 ```
 
-> ⚠️ The `.keras` model files are large. If they aren't in the repo, generate them by running the notebook, or download them from the link in the [Releases](../../releases) section, and place them in the `models/` folder.
+>  The `.keras` model files are large. If they aren't in the repo, generate them by running the notebook, or download them from the link in the [Releases](../../releases) section, and place them in the `models/` folder.
 
 ---
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 ### 1. Clone the repository
 ```bash
@@ -214,7 +214,7 @@ Open `http://localhost:8501` in your browser, upload an image, and see the gener
 
 ---
 
-## 📊 Results & Observations
+##  Results & Observations
 
 - The model generates grammatically reasonable captions that capture the main objects and actions in an image (e.g. dogs, children, people playing).
 - The learning curve shows **overfitting**: training loss keeps dropping while validation loss plateaus around 3.6 after a few epochs. This is expected given Flickr8k's small size.
@@ -222,7 +222,7 @@ Open `http://localhost:8501` in your browser, upload an image, and see the gener
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - [ ] Train on a larger dataset (**Flickr30k** / **MS-COCO**)
 - [ ] Add an **attention mechanism** (Show, Attend and Tell) so the decoder can focus on image regions
@@ -234,7 +234,7 @@ Open `http://localhost:8501` in your browser, upload an image, and see the gener
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white)
@@ -251,17 +251,4 @@ Open `http://localhost:8501` in your browser, upload an image, and see the gener
 
 ---
 
-## 🙏 Acknowledgements
 
-- [Flickr8k Dataset](https://www.kaggle.com/datasets/adityajn105/flickr8k)
-- Vinyals et al., *Show and Tell: A Neural Image Caption Generator* (CVPR 2015)
-- Huang et al., *Densely Connected Convolutional Networks* (CVPR 2017)
-
----
-
-## 👩‍💻 Author
-
-**Neha Upadhyay**
-MSR, Electrical Engineering (Computing and Intelligent Systems), IIT Delhi
-
-⭐ If you found this project useful, consider giving it a star!
