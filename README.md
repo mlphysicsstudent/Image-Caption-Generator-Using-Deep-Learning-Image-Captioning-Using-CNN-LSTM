@@ -75,7 +75,7 @@ flowchart LR
 
 ##  Dataset
 
-
+- https://www.kaggle.com/datasets/adityajn105/flickr8k
 - 8,091 images
 - 5 human-written captions per image (~40K captions)
 - `captions.txt` maps each image filename to its captions
