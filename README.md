@@ -75,7 +75,7 @@ flowchart LR
 
 ##  Dataset
 
-**[Flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k)**
+
 - 8,091 images
 - 5 human-written captions per image (~40K captions)
 - `captions.txt` maps each image filename to its captions
@@ -234,14 +234,6 @@ Open `http://localhost:8501` in your browser, upload an image, and see the gener
 
 ---
 
-##  Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Trained%20on-Kaggle-20BEFF?logo=kaggle&logoColor=white)
 
 - **Deep learning:** TensorFlow / Keras
 - **Pretrained CNN:** DenseNet201 (ImageNet)
